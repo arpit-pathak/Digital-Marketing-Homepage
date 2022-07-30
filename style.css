@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #3C2F60;
+    --light: #5955B3;
+    --gray: #979797;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    width: 85%;
+    margin: auto;
+}
+
+/* nav bar  */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+
+/* logo in navbar  */
+.navbar-container>div>img {
+    width: 75%;
+}
+
+.grow-list {
+    flex: 1;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    justify-content: start;
+}
+
+.list-item {
+    margin-left: 2rem;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--gray);
+}
+
+/* list hover  */
+.list-item:hover {
+    color: black;
+}
+
+.button-group {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-button {
+    font-size: 15px;
+    padding: 15px 25px;
+    color: #fff;
+    background: var(--light);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* banner */
+.banner-container {
+    display: flex;
+}
+
+/* left */
+.heading-text {
+    font-size: 60px;
+    margin: 70px 50px 30px 0px;
+    color: var(--dark);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.heading-text>span {
+    color: var(--light)
+}
+
+.description {
+    font-size: 15px;
+    padding-right: 110px;
+    color: var(--gray);
+}
+
+.btn {
+    margin: 50px auto;
+    padding: 20px 40px;
+    font-size: 1.1rem;
+}
+
+/* right hero image  */
+.banner-container>div>img {
+    width: 47rem;
+    overflow: hidden;
+}
